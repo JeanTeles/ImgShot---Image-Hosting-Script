@@ -1,0 +1,8 @@
+Options +FollowSymlinks
+Options -MultiViews
+RewriteEngine On
+RewriteBase /
+RewriteRule ^img-(.*)\.html img.php?id=$1 [L]
+RewriteRule ^slide-(.*)\.html slider.php?id=$1 [L]
+RewriteRule ^page-(.*)\.html page.php?name=$1 [L]
+RewriteRule ^contact\.html$ contact.php [QSA,L,NC]
